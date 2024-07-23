@@ -1,0 +1,773 @@
+#root {
+  max-width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Styling for Media Devices */
+/* Smaller Resolution Monitors */
+@media (min-width: 1600px) {
+  .navbar-name {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-left: 5rem;
+    letter-spacing: 4px;
+    font-style: italic;
+  }
+  .navbar-content {
+    padding-top: 2rem;
+    font-weight: 500;
+    padding-right: 4rem;
+  }
+  .intro-name {
+    font-family: "Montserrat", sans-serif;
+    font-size: 5rem;
+    margin-bottom: 0px;
+  }
+  .home-title {
+    position: relative;
+    margin: auto;
+    padding-top: 8rem;
+  }
+  .about-header {
+    padding-top: 2rem;
+  }
+  .about-avatar {
+    max-width: 250px;
+    margin-top: 3rem;
+  }
+  .about-content {
+    font-size: 1rem;
+  }
+  .about-content-education {
+    font-size: 0.9rem;
+  }
+  .logo {
+    height: 5rem;
+    padding: 1rem;
+  }
+  .skills-section {
+    margin-top: 3rem;
+  }
+  .about-right {
+    padding-left: 12rem;
+  }
+  .experiences-header {
+    padding-top: 2rem;
+  }
+  .experiences-content {
+    padding: 0 30rem;
+    padding-top: 2rem;
+  }
+  .experience-point {
+    font-size: 0.98rem;
+  }
+  .projects-header {
+    font-size: 4rem;
+    padding-top: 2rem;
+    margin: auto;
+    margin-bottom: 3rem;
+  }
+  .project-card-1 {
+    margin-left: 8rem;
+  }
+  .project-card-1 > img {
+    margin-right: 4rem;
+    margin-bottom: 8rem;
+    max-width: 900px;
+  }
+  .project-card-alt {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    text-align: right;
+    margin-right: 8rem;
+  }
+  .project-content-card-alt > h2 {
+    font-size: 3rem;
+    margin-top: 4rem;
+    margin-left: 8rem;
+  }
+  .project-content-card-alt > p {
+    margin-left: 8rem;
+    margin-bottom: 2rem;
+  }
+  .notes-app-img {
+    max-width: 900px;
+    margin-left: 4rem;
+    margin-bottom: 8rem;
+    transition: transform 1s;
+  }
+  .notes-app-img:hover {
+    transform: scale(0.95);
+  }
+  .project-content-card > h2 {
+    font-size: 3rem;
+    margin-top: 6rem;
+    margin-right: 5rem;
+  }
+  .project-content-card > p {
+    margin-right: 8rem;
+    margin-bottom: 2rem;
+  }
+  .contact-header {
+    font-size: 4rem;
+    padding-top: 4rem;
+  }
+  .return-top {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    text-align: end;
+  }
+  .return-top > a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-right: 2rem;
+    padding: 0 0.25rem;
+    background-image: linear-gradient(120deg, #ff4d4d 0%, #594dff 100%)
+  }
+  .footer .footer-icons {
+    padding-top: 0.5rem;
+  }
+  .footer .footer-icons > a {
+    margin-top: 0px;
+    padding: 0px 2rem;
+    font-size: 2rem;
+  }
+  .footer > p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media only screen and (min-device-width:1900px) {
+  .navbar-name {
+    font-size: 2rem;
+  }
+  .intro-name {
+    font-family: "Montserrat", sans-serif;
+    font-size: 5rem;
+    margin-bottom: 0px;
+  }
+  .home-title {
+    position: relative;
+    margin: auto;
+    padding-top: 10rem;
+  }
+  .about-header {
+    padding-top: 4rem;
+  }
+  .about-avatar {
+    max-width: 400px;
+    margin-top: 5rem;
+  }
+  .about-content {
+    font-size: 1.2rem;
+  }
+  .about-content-education {
+    font-size: 0.9rem;
+  }
+  .logo {
+    height: 6rem;
+    padding: 1.5rem;
+  }
+  .skills-section {
+    margin-top: 3rem;
+  }
+  .about-right {
+    padding-left: 15rem;
+  }
+  .experiences-header {
+    padding-top: 4rem;
+  }
+  .experiences-content {
+      padding: 0 40rem;
+      padding-top: 3rem;
+  }
+  .projects-header {
+    font-size: 4rem;
+    padding-top: 4rem;
+    margin: auto;
+    margin-bottom: 3rem;
+  }
+  .project-card-1 {
+    margin-left: 10rem;
+  }
+  .project-card-1 > img {
+    margin-right: 4rem;
+    margin-bottom: 6rem;
+    max-width: 1000px;
+  }
+  .project-card-alt {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    text-align: right;
+    margin-right: 8rem;
+  }
+  .project-content-card-alt > h2 {
+    font-size: 3rem;
+    margin-top: 6rem;
+    margin-left: 5rem;
+  }
+  .project-content-card-alt > p {
+    margin-left: 8rem;
+    margin-bottom: 2rem;
+  }
+  .notes-app-img {
+    max-width: 1000px;
+    margin-left: 4rem;
+    margin-bottom: 6rem;
+    transition: transform 1s;
+  }
+  .notes-app-img:hover {
+    transform: scale(0.95);
+  }
+  .project-content-card > h2 {
+    font-size: 3rem;
+    margin-top: 6rem;
+    margin-right: 5rem;
+  }
+  .project-content-card > p {
+    margin-right: 8rem;
+    margin-bottom: 2rem;
+  }
+  .return-top {
+    margin-top: 6rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    text-align: end;
+  }
+  .return-top > a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-right: 2rem;
+    padding: 0 0.25rem;
+    background-image: linear-gradient(120deg, #ff4d4d 0%, #594dff 100%)
+  }
+  .footer .footer-icons {
+    padding-top: 1.5rem;
+  }
+  .footer .footer-icons > a {
+    margin-top: 0px;
+    padding: 0px 2rem;
+    font-size: 3rem;
+  }
+  .footer > p {
+    padding-bottom: 1rem;
+  }
+}
+
+/* Navbar Section */
+.navbar {
+  text-transform: uppercase;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.navbar-content > a {
+  padding: 1rem;
+  position: relative;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  color: white;
+}
+.navbar-content > a:hover {
+  cursor: pointer;
+  opacity: 90%;
+}
+.navbar-content > a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.125rem;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+.navbar-content > a:hover::before {
+  transform: scaleX(1);
+}
+
+/* About Section */
+.about-section {
+  height: 100vh;
+}
+.intro-image {
+  position: absolute;
+  align-self: center;
+  left: 0%;
+  top: 0%;
+  z-index: -1;
+  max-height: 100vh;
+  width: 100%;
+  box-shadow: 0px 3px 7.5px rgba(255, 255, 255, 0.3);
+  margin-bottom: 0px;
+}
+.intro-title {
+  color: white;
+}
+.black {
+  color: #594dff;
+}
+.home-title h1 {
+  display: block;
+  animation: reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+}
+.home-title span {
+  display: block;
+  animation: reveal 3s cubic-bezier(0.77, 0, 0.175, 1) 500ms;
+}
+.home-title p {
+  display: block;
+  animation: reveal 4s cubic-bezier(0.77, 0, 0.175, 1) 500ms;
+}
+.home-title a {
+  display: block;
+  animation: reveal 4s cubic-bezier(0.77, 0, 0.175, 1) 500ms;
+}
+@keyframes reveal {
+  0% {
+    transform: translate(0,100%);
+    color: rgba(0,0,0,0);
+  }
+  100% {
+    transform: translate(0,0);
+  }
+}
+
+/* Projects Section */
+.projects {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+.projects-header {
+  text-align: center;
+  align-items: center;
+  color: white;
+  background-image: linear-gradient(120deg, #ff4d4d 0%, #594dff 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.4em;
+  background-position: 20px 100%;
+  width: 290px;
+}
+.project-card-1 {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  text-align: left;
+}
+.project-card-1 > img {
+  transition: transform 1s;
+}
+.project-card-1 > img:hover {
+  transform: scale(0.95);
+}
+.project-button {
+  background-color: white;
+  color: black;
+  border: 2px solid #594dff;
+}
+.project-button:hover {
+  color: white;
+  background-image: linear-gradient(120deg, #ff4d4d 0%, #594dff 100%);
+  transition: linear 300ms ease-in;
+  -webkit-transition: background-position 300ms, color 300ms ease, border-color 300ms ease;
+}
+
+/* Footer Section */
+.footer {
+  width: 100%;
+  text-align: center;
+  background-color: #242424;
+  margin-bottom: 0px;
+}
+
+.footer .footer-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.footer .footer-icons > a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.footer .footer-icons > a:hover {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.1);
+}
+
+.footer .footer-icons .fa-github {
+  color: white;
+}
+
+.footer .footer-icons .fa-envelope {
+  color: rgb(138, 189, 255);
+}
+
+.footer .footer-icons .fa-instagram {
+  background: linear-gradient(120deg, #ff4d4d 0%, #594dff 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer > p {
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+/* Contact Section */
+.contact {
+  width: 100%;
+  height: 100vh;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.contact-header {
+  text-align: center;
+  align-items: center;
+  color: white;
+  background-image: linear-gradient(120deg, #ff4d4d 0%, #594dff 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.4em;
+  background-position: 20px 100%;
+  width: 275px;
+  margin: auto;
+}
+
+.contact-content {
+  margin-top: 4rem;
+  margin-bottom: 0px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form > label {
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+  color: white;
+}
+
+.contact-form > input {
+  padding: 0.5rem 0;
+  text-indent: 6px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact-form > textarea {
+  padding: 0.5rem 0;
+  margin-bottom: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  text-indent: 6px; 
+}
+
+.submit-button {
+  color: black;
+  background-color: white;
+  max-width: 30%;
+  margin-top: 0px;
+  align-self: flex-end;
+}
+
+/* Experiences Section */
+.experiences {
+  width: 100%;
+  height: 100vh;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+}
+
+.experiences-header {
+  text-align: center;
+  align-items: center;
+  color: white;
+  font-size: 4rem;
+  background-image: linear-gradient(120deg, #ff4d4d 0%, #594dff 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.4em;
+  background-position: 20px 100%;
+  width: 420px;
+  margin: auto;
+}
+
+.experiences-content {
+  color: white;
+}
+
+.job-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.company-title {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}
+
+.work-duration {
+  font-style: italic;
+  color: tan;
+  margin-bottom: 0px;
+}
+
+.job-title {
+  margin-top: 0px;
+  font-size: 1rem;
+  color: tan;
+}
+
+/* About Me Section */
+.about {
+  width: 100%;
+  height: 100vh;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about-page {
+  display: flex;
+}
+
+.about-header {
+  text-align: center;
+  align-items: center;
+  color: white;
+  font-size: 4rem;
+  background-image: linear-gradient(120deg, #ff4d4d 0%, #594dff 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.4em;
+  background-position: 20px 100%;
+  width: 220px;
+  margin: auto;
+}
+
+.about-left {
+  max-width: 40%;
+}
+
+.about-avatar {
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 3px 3px 7.5px rgba(255, 255, 255, 0.3);
+  margin-left: 12rem;
+}
+
+.about-avatar:hover {
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.1);
+}
+
+.about-content {
+  margin-top: 2rem;
+  margin-left: 12rem;
+}
+
+.about-content-education {
+  font-style: italic;
+  color: tan;
+}
+
+/* Skills Section */
+.about-right {
+  align-items: end;
+  text-align: center;
+}
+
+.skills-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-align: end;
+  align-items: end;
+  font-size: 2.5rem;
+  padding-top: 2rem;
+  margin-right: 2rem;
+}
+
+.skills-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.skills-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  transition: filter 300ms;
+}
+.logo.html:hover {
+  filter: drop-shadow(0 0 2em #fa4d41aa);
+}
+.logo.css:hover {
+  filter: drop-shadow(0 0 2em #2181ffe0);
+}
+.logo.js:hover {
+  filter: drop-shadow(0 0 2em #fcff64aa);
+}
+.logo.python:hover {
+  filter: drop-shadow(0 0 2em #8dccffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+.logo.vite:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.git:hover {
+  filter: drop-shadow(0 0 2em #fa4b4baa);
+}
+.logo.nodejs:hover {
+  filter: drop-shadow(0 0 2em #57ff9daa);
+}
+.logo.firebase:hover {
+  filter: drop-shadow(0 0 2em #fdc04faa);
+}
+.logo.nextjs:hover {
+  filter: drop-shadow(0 0 2em #fffefeaa);
+}
+.logo.electron:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+.logo.tauri:hover {
+  filter: drop-shadow(0 0 2em #eaffceaa);
+}
+
+.next-section {
+  width: 100%;
+  text-align: end;
+}
+
+.next-section > a {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  margin-right: 2rem;
+  padding: 0 0.25rem;
+  background-image: linear-gradient(120deg, #ff4d4d 0%, #594dff 100%)
+}
+
+/* Testing */
+section{
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  top:0%;
+  left:60%;
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(255,255,255,0.1),0 0 0 8px rgba(255,255,255,0.1),0 0 20px rgba(255,255,255,0.1);
+  animation: animate 3s linear infinite;
+}
+
+.star::before{
+  content:'';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 1px;
+  background: linear-gradient(90deg,#fff,transparent);
+}
+@keyframes animate
+{
+  0%
+  {
+      transform: rotate(315deg) translateX(0);
+      opacity: 1;
+  }
+  70%
+  {
+      opacity: 1;
+  }
+  100%
+  {
+      transform: rotate(315deg) translateX(-1000px);
+      opacity: 0;
+  }
+}
+
+.star:nth-child(1){
+  top: 0;
+  right: 220px;
+  left: initial;
+  animation-delay: 0s;
+  animation-duration: 5s;
+}
+
+.star:nth-child(2){
+  top: 0;
+  right: 480px;
+  left: initial;
+  animation-delay: 0.2s;
+  animation-duration: 4s;
+}
+.star:nth-child(3){
+  top: 0;
+  right: 1100px;
+  left: initial;
+  animation-delay: 0.8s;
+  animation-duration: 3.5s;
+}
+.star:nth-child(4){
+  top: 0;
+  right: 320px;
+  left: initial;
+  animation-delay: 0.8s;
+  animation-duration: 2.5s;
+} */
+
+/* Projects Section */
+
+
+/* Contact Section */
+
+
+/* Dynamic Attributes */
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
