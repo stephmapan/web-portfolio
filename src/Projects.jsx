@@ -42,7 +42,7 @@ function Projects() {
                     <br></br>
                     <br></br>
 
-                    <a target='_blank'>
+                    <a href='https://github.com/stephmapan/Notes-Web-App' target='_blank'>
                         <button className='project-button'>Learn More</button>
                     </a>
                 </div>
@@ -57,13 +57,13 @@ function Projects() {
                     <h2>// Personal Online Web Portfolio //</h2>
                     <p>My online web portfolio created using React and Javascript, hosted on Github Pages.</p>
 
-                    <a target='_blank'>
+                    <a href='https://stephmapan.github.io/web-portfolio/' target='_blank'>
                         <button className='project-button'>View Demo</button>
                     </a>
                     <br></br>
                     <br></br>
 
-                    <a target='_blank'>
+                    <a href='https://github.com/stephmapan/web-portfolio' target='_blank'>
                         <button className='project-button'>Learn More</button>
                     </a>
                 </div>
